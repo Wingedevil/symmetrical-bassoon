@@ -11,3 +11,4 @@ phy_fixed_rotation = true;
 grounded = false;
 dead = false;
 deadFor = 0;
+collisionList = ds_list_create();

@@ -8,12 +8,12 @@ if (undoing) {
 	phy_speed_x = 0;
 	phy_speed_y = 0;
 	phy_angular_velocity = 0;
-	oldX = phy_position_x;
-	oldY = phy_position_y;
-	newX = ds_stack_pop(undoXStack);
-	newY = ds_stack_pop(undoYStack);
-	phy_position_x = newX;
-	phy_position_y = newY;
+	phy_position_x = ds_stack_pop(undopXStack);
+	phy_position_y = ds_stack_pop(undopYStack);
+	newX = -ds_stack_pop(undoXStack);
+	newY = -ds_stack_pop(undoYStack);
+	phy_speed_x = newX;
+	phy_speed_y = newY;
 	phy_rotation = -ds_stack_pop(undoRotStack);
 	undoing = (ds_stack_size(undoXStack) != 1);
 	phy_fixed_rotation = (ds_stack_size(undoXStack) != 1);
@@ -23,17 +23,17 @@ if (undoing) {
 	var colorBlend = 255 * (1 - (ds_stack_size(undoXStack) - 1) / undoingStacks);
 	image_blend = make_color_rgb(255, colorBlend, colorBlend);
 	
-	if (place_meeting(x, y - 1, obj_player)) {
-		obj_player.phy_position_x += newX - oldX;
-		obj_player.phy_position_y += newY - oldY;
+	if (place_meeting(x, y - 2, obj_player)) {
+		obj_player.phy_position_x += newX;
+		obj_player.phy_position_y += newY;
 	}
 	
 	return;
 }
 
 if (freezeFramesLeft > 0) {
-	phy_position_x = ds_stack_top(undoXStack);
-	phy_position_y = ds_stack_top(undoYStack);
+	phy_position_x = ds_stack_top(undopXStack);
+	phy_position_y = ds_stack_top(undopYStack);
 	phy_rotation = -ds_stack_top(undoRotStack);
 	phy_speed_x = 0;
 	phy_speed_y = 0;
@@ -42,11 +42,13 @@ if (freezeFramesLeft > 0) {
 	return;
 }
 
-if(abs(ds_stack_top(undoXStack) - x) > undoableEpsilon
-	|| abs(ds_stack_top(undoYStack) - y) > undoableEpsilon 
+if (abs(ds_stack_top(undopXStack) - x) > undoableEpsilon
+	|| abs(ds_stack_top(undopYStack) - y) > undoableEpsilon 
 	|| abs(ds_stack_top(undoRotStack) - image_angle) > undoableEpsilon){
-	ds_stack_push(undoXStack, x);
-	ds_stack_push(undoYStack, y);
+	ds_stack_push(undoXStack, phy_speed_x);
+	ds_stack_push(undoYStack, phy_speed_y);
+	ds_stack_push(undopXStack, x);
+	ds_stack_push(undopYStack, y);
 	ds_stack_push(undoRotStack, image_angle);
 }
 

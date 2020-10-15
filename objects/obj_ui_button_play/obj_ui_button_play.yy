@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ui_button_play",
+    "path": "sprites/spr_ui_button_play/spr_ui_button_play.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -17,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_ui_button_play","path":"objects/obj_ui_button_play/obj_ui_button_play.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ui",
+    "path": "folders/Objects/ui.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_jumpable",
+  "name": "obj_ui_button_play",
   "tags": [],
   "resourceType": "GMObject",
 }
