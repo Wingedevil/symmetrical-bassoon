@@ -1,6 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!paused && global.isGamePaused) {
+	paused = true;
+	preActive = phy_active;
+	phy_active = false;
+	return;
+} else if (paused && !global.isGamePaused) {
+	paused = false;
+	phy_active = preActive;
+} else if (global.isGamePaused) {
+	return;
+}
+
 phy_speed_x = clamp(phy_speed_x, -10, 10);
 phy_speed_y = clamp(phy_speed_y, -10, 10);
 

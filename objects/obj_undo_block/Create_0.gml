@@ -6,6 +6,7 @@ undoableEpsilon = 1;
 freezeFrames = 10;
 freezeFramesLeft = 0;
 
+paused = false;
 undoing = 0;
 undoingStacks = 0;
 

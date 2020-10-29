@@ -8,6 +8,7 @@ DEAD_BEFORE_RELOAD = 60;
 ENABLE_AIR_STRAFE = true;
 phy_fixed_rotation = true;
 
+paused = false;
 grounded = false;
 dead = false;
 deadFor = 0;
