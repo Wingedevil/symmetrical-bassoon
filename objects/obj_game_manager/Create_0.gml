@@ -16,3 +16,7 @@ var par = ds_map_find_value(global.levelParIndex, levelName);
 if (!is_undefined(par)) {
 	levelPar = par;
 }
+
+global.nextLevel = "";
+global.starredFlag = false;
+global.betterScoreFlag = false;

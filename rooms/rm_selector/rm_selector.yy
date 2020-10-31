@@ -58,10 +58,6 @@
             {"propertyId":{"name":"levelName","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"objectId":{"name":"obj_ui_polaroid","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"value":"L4-3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"roomName","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"objectId":{"name":"obj_ui_polaroid","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"value":"rm_w4_3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_ui_polaroid","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":2.0,"scaleX":0.8,"scaleY":0.8,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":832.0,"y":64.0,"resourceVersion":"1.0","name":"inst_7C99A543","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"levelName","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"objectId":{"name":"obj_ui_polaroid","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"value":"L4-4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-            {"propertyId":{"name":"roomName","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"objectId":{"name":"obj_ui_polaroid","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"value":"rm_w4_4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"obj_ui_polaroid","path":"objects/obj_ui_polaroid/obj_ui_polaroid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-1.0,"scaleX":0.8,"scaleY":0.8,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":416.0,"resourceVersion":"1.0","name":"inst_133ED6CF","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tab_4","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
@@ -209,7 +205,6 @@
     {"name":"inst_3EAD0523","path":"rooms/rm_selector/rm_selector.yy",},
     {"name":"inst_4558C48B","path":"rooms/rm_selector/rm_selector.yy",},
     {"name":"inst_48821351","path":"rooms/rm_selector/rm_selector.yy",},
-    {"name":"inst_133ED6CF","path":"rooms/rm_selector/rm_selector.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
