@@ -7,6 +7,14 @@ if (unlocked) {
 	}
 }
 
+if (unlocked && ds_map_exists(global.unlockIndex, keyName) && !ds_map_find_value(global.unlockIndex, keyName)) {
+	sprite_index = spr_undoable_door_closed;
+	phy_active = true;
+	unlocked = false;
+	currentFrames = 0;
+	mask_index = spr_undoable_door_closed;
+}
+
 if (!unlocked && ds_map_exists(global.unlockIndex, keyName) && ds_map_find_value(global.unlockIndex, keyName)) {
 	sprite_index = spr_undoable_door_opened;
 	phy_active = false;

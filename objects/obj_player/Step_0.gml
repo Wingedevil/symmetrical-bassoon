@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 if (!paused && global.isGamePaused) {
 	paused = true;
 	preActive = phy_active;
@@ -27,7 +28,7 @@ if (dead) {
 }
 
 ds_list_clear(collisionList);
-groundedCheck = instance_place_list(x, y + 2, obj_abs_jumpable, collisionList, false);
+groundedCheck = instance_position_list(x, y + 2, obj_abs_jumpable, collisionList, false);
 
 if (groundedCheck == 0) {
 	grounded = false;
@@ -52,10 +53,10 @@ var xMoveDir = 0;
 rightCheck = instance_place(x + 1, y, obj_abs_static);
 leftCheck = instance_place(x - 1, y, obj_abs_static);
 if (rightCheck == noone || !rightCheck.phy_active) {
-	xMoveDir += keyRight; 
+	xMoveDir += keyRight;
 }
 if (leftCheck == noone || !leftCheck.phy_active) {
-	xMoveDir -= keyLeft; 
+	xMoveDir -= keyLeft;
 }
 
 // jumping
@@ -66,5 +67,18 @@ if (grounded && keyJump){
 
 if (ENABLE_AIR_STRAFE || grounded) {
 	var xSpeed = xMoveDir * SPD_MOVE;
-	phy_speed_x = xSpeed;
+	image_xscale = sign(xMoveDir) == 0 ? image_xscale : sign(xMoveDir);
+	phy_speed_x *= sign(phy_speed_x) != sign(xSpeed) ? 0 : 1;
+	physics_apply_force(x, y, xSpeed * phy_mass * phy_mass * phy_mass * 2, 0);
+	if (xMoveDir != 0) {
+		sprite_index = tick < 0 ? spr_player_wibbly : spr_player_wobbly;
+		framesToTickSwitch--;
+		if (framesToTickSwitch <= 0) {
+			tick *= -1;
+			framesToTickSwitch = FRAMES_TO_SWITCH;
+		}
+	} else {
+		sprite_index = spr_player;
+		framesToTickSwitch = FRAMES_TO_SWITCH;
+	}
 }

@@ -19,7 +19,7 @@
   "physicsRestitution": 0.0,
   "physicsLinearDamping": 1.0,
   "physicsAngularDamping": 5.0,
-  "physicsFriction": 0.5,
+  "physicsFriction": 0.3,
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
@@ -32,6 +32,8 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_undo_block","path":"objects/obj_undo_block/obj_undo_block.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_undo_block","path":"objects/obj_undo_block/obj_undo_block.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_undo_block","path":"objects/obj_undo_block/obj_undo_block.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_undo_block","path":"objects/obj_undo_block/obj_undo_block.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":11,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_undo_block","path":"objects/obj_undo_block/obj_undo_block.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

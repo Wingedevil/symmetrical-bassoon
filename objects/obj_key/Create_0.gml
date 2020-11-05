@@ -3,7 +3,7 @@
 
 UNLOCK_FRAMES = 0.4 * 60;
 
-depth -= 10;
+depth = 80;
 unlocking = false;
 unlocked = false;
 locking = false;

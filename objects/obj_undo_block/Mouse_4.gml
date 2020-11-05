@@ -8,6 +8,8 @@ if (global.isGamePaused) {
 if(ds_stack_size(undoXStack) < freezeFrames){
 	return;
 }
+
+cursor_sprite = spr_cursor;
 obj_game_manager.undoesUsed++;
 undoing = 1;
 undoingStacks = ds_stack_size(undoXStack);

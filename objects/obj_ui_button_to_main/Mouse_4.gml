@@ -3,4 +3,4 @@
 
 global.levelPage = "0";
 global.isInspectingLevel = false;
-room_goto(rm_main);
+obj_room_manager.goto(rm_main);

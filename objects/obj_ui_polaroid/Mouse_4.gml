@@ -18,10 +18,12 @@ if (loadLevel) {
 	global.isInspectingLevel = obj_selector_manager.isInspectingLevel;
 	global.inspectedLevel = obj_selector_manager.inspectedLevel;
 	global.inspectedRoom = obj_selector_manager.inspectedRoom;
-	room_goto(global.inspectedRoom);
+	global.polaroidSprite = obj_selector_manager.polaroidSprite;
+	obj_room_manager.goto(global.inspectedRoom);
 } else {
 	obj_selector_manager.isInspectingLevel = true;
 	obj_selector_manager.inspectedLevel = levelName;
 	obj_selector_manager.inspectedRoom = roomName;
+	obj_selector_manager.polaroidSprite = levelPreview;
 	image_blend = make_colour_rgb(255, 255, 255);
 }

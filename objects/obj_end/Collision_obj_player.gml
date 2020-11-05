@@ -5,6 +5,9 @@ if (obj_game_manager.win) {
 	return;
 }
 
+obj_player.phy_speed_x = 0;
+obj_player.phy_speed_y = 0;
+
 // set flag to unlock next level
 if (is_undefined(ds_map_find_value(global.levelIndex, obj_game_manager.levelName))) {
 	global.nextLevelFlag = true;

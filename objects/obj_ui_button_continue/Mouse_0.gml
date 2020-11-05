@@ -6,4 +6,5 @@ if (global.isGamePaused) {
 	instance_activate_layer("Menu");
 } else {
 	instance_deactivate_layer("Menu");
+	global.instructionsIsShowing = false;
 }

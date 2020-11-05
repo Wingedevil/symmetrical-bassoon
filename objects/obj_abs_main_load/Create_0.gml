@@ -11,13 +11,19 @@ global.nextLevel = "first";
 global.nextLevelFlag = false;
 global.betterScoreFlag = false;
 global.starredFlag = false;
+global.instructionsIsShowing = false;
+cursor_sprite = spr_cursor;
+
+obj_sound_manager.playSoundOnLoop(snd_bgm_1);
+
+ds_map_add(global.levelIndex, "visitedStart", 0);
 
 var save = file_text_open_read("save.dat");
 if (save != -1) {
 	while (!file_text_eof(save)) {
 		var lvl = file_text_read_string(save);
 		var undoes = file_text_read_real(save);
-		ds_map_add(global.levelIndex, lvl, undoes);
+		ds_map_replace(global.levelIndex, lvl, undoes);
 	}
 	file_text_close(save);
 }
@@ -28,7 +34,7 @@ ds_map_add(global.levelNextIndex, "L0-1", "L0-2");
 ds_map_add(global.levelParIndex, "L0-2", 2);
 ds_map_add(global.levelPrevIndex, "L0-2", "L0-1");
 ds_map_add(global.levelNextIndex, "L0-2", "L0-3");
-ds_map_add(global.levelParIndex, "L0-3", 4);
+ds_map_add(global.levelParIndex, "L0-3", 5);
 ds_map_add(global.levelPrevIndex, "L0-3", "L0-2");
 ds_map_add(global.levelNextIndex, "L0-3", "L0-4");
 ds_map_add(global.levelParIndex, "L0-4", 1);
@@ -75,7 +81,7 @@ ds_map_add(global.nextPageIndex, "L3-3", "4");
 ds_map_add(global.levelParIndex, "L4-1", 5);
 ds_map_add(global.levelPrevIndex, "L4-1", "L3-3");
 ds_map_add(global.levelNextIndex, "L4-1", "L4-2");
-ds_map_add(global.levelParIndex, "L4-2", 1);
+ds_map_add(global.levelParIndex, "L4-2", 2);
 ds_map_add(global.levelPrevIndex, "L4-2", "L4-1");
 ds_map_add(global.levelNextIndex, "L4-2", "L4-3");
 ds_map_add(global.levelParIndex, "L4-3", 2);

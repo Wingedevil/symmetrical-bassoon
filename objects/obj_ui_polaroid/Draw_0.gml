@@ -15,10 +15,11 @@ if (loadLevel) {
 	}
 	
 	if (enabled1) {
-		draw_set_font(fmt_text_basic);
-		draw_set_halign(fa_center);
-		draw_set_valign(fa_middle);
-		draw_text_color(x + sprite_width / 2, y + sprite_height / 2, obj_selector_manager.inspectedLevel + " Preview", c_white, c_white, c_white, c_white, 1);
+		// draw_set_font(fmt_text_basic);
+		// draw_set_halign(fa_center);
+		// draw_set_valign(fa_middle);
+		// draw_text_color(x + sprite_width / 2, y + sprite_height / 2, obj_selector_manager.inspectedLevel + " Preview", c_white, c_white, c_white, c_white, 1);
+		draw_sprite_ext(obj_selector_manager.polaroidSprite, 0, x + 25, y + 100, image_xscale, image_yscale, image_angle, c_white, 1);
 	}
 	
 	// draw level star
@@ -38,12 +39,12 @@ if (loadLevel) {
 	return;
 }
 
-// TODO: draw level preview
 if (enabled) {
-	draw_set_font(fmt_text_basic);
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
-	draw_text_color(x + sprite_width / 2, y + sprite_height / 2, levelName + " Preview", c_white, c_white, c_white, c_white, 1);
+	// draw_set_font(fmt_text_basic);
+	// draw_set_halign(fa_center);
+	// draw_set_valign(fa_middle);
+	// draw_text_color(x + sprite_width / 2, y + sprite_height / 2, levelName + " Preview", c_white, c_white, c_white, c_white, 1);
+	draw_sprite_ext(levelPreview, 0, x + 22, y + 70, image_xscale, image_yscale, image_angle, c_white, 1);
 }
 
 // draw level star
