@@ -26,4 +26,5 @@ if (loadLevel) {
 	obj_selector_manager.inspectedRoom = roomName;
 	obj_selector_manager.polaroidSprite = levelPreview;
 	image_blend = make_colour_rgb(255, 255, 255);
+	obj_sound_manager.playSoundOnce(snd_sfx_flip);
 }

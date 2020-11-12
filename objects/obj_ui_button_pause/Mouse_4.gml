@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if (!global.isGamePaused) {
+	obj_sound_manager.playSoundOnce(snd_sfx_button);
 	global.isGamePaused = !global.isGamePaused;
 	if (global.isGamePaused) {
 		instance_activate_layer("Menu");

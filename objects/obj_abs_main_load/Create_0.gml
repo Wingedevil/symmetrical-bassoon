@@ -14,8 +14,6 @@ global.starredFlag = false;
 global.instructionsIsShowing = false;
 cursor_sprite = spr_cursor;
 
-obj_sound_manager.playSoundOnLoop(snd_bgm_1);
-
 ds_map_add(global.levelIndex, "visitedStart", 0);
 
 var save = file_text_open_read("save.dat");
@@ -75,15 +73,15 @@ ds_map_add(global.levelPrevIndex, "L3-2", "L3-1");
 ds_map_add(global.levelNextIndex, "L3-2", "L3-3");
 ds_map_add(global.levelParIndex, "L3-3", 6);
 ds_map_add(global.levelPrevIndex, "L3-3", "L3-2");
-ds_map_add(global.levelNextIndex, "L3-3", "L4-1");
-ds_map_add(global.nextPageIndex, "L3-3", "4");
+ds_map_add(global.levelNextIndex, "L3-3", "LF-1");
+ds_map_add(global.nextPageIndex, "L3-3", "F");
 
-ds_map_add(global.levelParIndex, "L4-1", 5);
-ds_map_add(global.levelPrevIndex, "L4-1", "L3-3");
-ds_map_add(global.levelNextIndex, "L4-1", "L4-2");
-ds_map_add(global.levelParIndex, "L4-2", 2);
-ds_map_add(global.levelPrevIndex, "L4-2", "L4-1");
-ds_map_add(global.levelNextIndex, "L4-2", "L4-3");
-ds_map_add(global.levelParIndex, "L4-3", 2);
-ds_map_add(global.levelPrevIndex, "L4-3", "L4-2");
-ds_map_add(global.levelNextIndex, "L4-3", "last");
+ds_map_add(global.levelParIndex, "LF-1", 4);
+ds_map_add(global.levelPrevIndex, "LF-1", "L3-3");
+ds_map_add(global.levelNextIndex, "LF-1", "LF-2");
+ds_map_add(global.levelParIndex, "LF-2", 2);
+ds_map_add(global.levelPrevIndex, "LF-2", "LF-1");
+ds_map_add(global.levelNextIndex, "LF-2", "LF-3");
+ds_map_add(global.levelParIndex, "LF-3", 2);
+ds_map_add(global.levelPrevIndex, "LF-3", "LF-2");
+ds_map_add(global.levelNextIndex, "LF-3", "last");

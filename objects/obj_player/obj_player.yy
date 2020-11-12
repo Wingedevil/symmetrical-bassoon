@@ -20,10 +20,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":16.0,"y":64.0,},
-    {"x":16.0,"y":1.0,},
-    {"x":48.0,"y":1.0,},
-    {"x":48.0,"y":64.0,},
+    {"x":10.0,"y":64.0,},
+    {"x":10.0,"y":0.0,},
+    {"x":54.0,"y":0.0,},
+    {"x":54.0,"y":64.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

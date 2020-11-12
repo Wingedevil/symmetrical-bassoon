@@ -21,7 +21,7 @@ case "2":
 case "3":
 	instance_activate_layer("Tab_3");
 	break;
-case "4":
+case "F":
 	instance_activate_layer("Tab_4");
 	break;
 default:

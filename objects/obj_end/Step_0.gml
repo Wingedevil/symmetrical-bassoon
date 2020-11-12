@@ -6,9 +6,9 @@ if (frames > 0) {
 	if (frames <= 0) {
 		// go back to selector
 		cursor_sprite = spr_cursor;
-		if (obj_game_manager.levelName == "L4-3") {
+		if (obj_game_manager.levelName == "LF-3") {
 			global.nextLevelFlag = false;
-			if (ds_map_find_value(global.levelIndex, "L4-3") <= ds_map_find_value(global.levelParIndex, "L4-3")) {
+			if (ds_map_find_value(global.levelIndex, "LF-3") <= ds_map_find_value(global.levelParIndex, "LF-3")) {
 				obj_room_manager.goto(rm_cs_e1);
 			} else {
 				obj_room_manager.goto(rm_cs_end_false);

@@ -21,7 +21,7 @@ global.nextLevel = "";
 global.starredFlag = false;
 global.betterScoreFlag = false;
 
-if (string_char_at(levelName, 2) == "4") {
+if (string_char_at(levelName, 2) == "F") {
 	if (audio_is_playing(snd_bgm_1)) {
 		obj_sound_manager.stopAllSounds();
 		obj_sound_manager.playSoundOnLoop(snd_bgm_2);
