@@ -196,7 +196,6 @@
   "RoomOrder": [
     {"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},
     {"name":"rm_selector","path":"rooms/rm_selector/rm_selector.yy",},
-    {"name":"rm_cs_b1","path":"rooms/rm_cs_b1/rm_cs_b1.yy",},
     {"name":"rm_dep_lvl_1","path":"rooms/rm_dep_lvl_1/rm_dep_lvl_1.yy",},
     {"name":"rm_w0_1","path":"rooms/rm_w0_1/rm_w0_1.yy",},
     {"name":"rm_w0_2","path":"rooms/rm_w0_2/rm_w0_2.yy",},
@@ -217,6 +216,7 @@
     {"name":"rm_w4_3","path":"rooms/rm_w4_3/rm_w4_3.yy",},
     {"name":"rm_goto_main","path":"rooms/rm_goto_main/rm_goto_main.yy",},
     {"name":"rm_w3_1","path":"rooms/rm_w3_1/rm_w3_1.yy",},
+    {"name":"rm_cs_b1","path":"rooms/rm_cs_b1/rm_cs_b1.yy",},
     {"name":"rm_cs_b2","path":"rooms/rm_cs_b2/rm_cs_b2.yy",},
     {"name":"rm_cs_b3","path":"rooms/rm_cs_b3/rm_cs_b3.yy",},
     {"name":"rm_cs_e1","path":"rooms/rm_cs_e1/rm_cs_e1.yy",},

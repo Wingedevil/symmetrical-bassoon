@@ -19,7 +19,11 @@ if (loadLevel) {
 	global.inspectedLevel = obj_selector_manager.inspectedLevel;
 	global.inspectedRoom = obj_selector_manager.inspectedRoom;
 	global.polaroidSprite = obj_selector_manager.polaroidSprite;
-	obj_room_manager.goto(global.inspectedRoom);
+	if (global.inspectedRoom == rm_w0_1) {
+		obj_room_manager.goto(rm_cs_b1);
+	} else {
+		obj_room_manager.goto(global.inspectedRoom);
+	}
 } else {
 	obj_selector_manager.isInspectingLevel = true;
 	obj_selector_manager.inspectedLevel = levelName;

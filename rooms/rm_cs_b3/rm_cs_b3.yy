@@ -15,7 +15,7 @@
   "layers": [
     {"instances":[
         {"properties":[
-            {"propertyId":{"name":"nextLevel","path":"objects/obj_cutscene_manager/obj_cutscene_manager.yy",},"objectId":{"name":"obj_cutscene_manager","path":"objects/obj_cutscene_manager/obj_cutscene_manager.yy",},"value":"rm_selector","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"nextLevel","path":"objects/obj_cutscene_manager/obj_cutscene_manager.yy",},"objectId":{"name":"obj_cutscene_manager","path":"objects/obj_cutscene_manager/obj_cutscene_manager.yy",},"value":"rm_w0_1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_cutscene_manager","path":"objects/obj_cutscene_manager/obj_cutscene_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_622B6949","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"text","path":"objects/obj_ui_textbox/obj_ui_textbox.yy",},"objectId":{"name":"obj_ui_textbox","path":"objects/obj_ui_textbox/obj_ui_textbox.yy",},"value":"To find her, the lesser faeries sent a brave knight into the","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
